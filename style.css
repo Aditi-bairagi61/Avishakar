@@ -1,0 +1,429 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 14vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  background-image: url(one..jpg);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  
+ 
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+#profile {
+    height: 80vh;
+    background-image: url(seven.jpg);
+    background-size: 100%;
+    position: relative;
+  }
+  
+  #profile::before {
+    content: "Dashboard for real-time monitoring of Construction Project";
+    position: absolute;
+    top: -6%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the opacity (0.7) as needed */
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333; /* Text color */
+    text-align: center;
+    border-radius: 3px;
+  }
+  
+  
+
+
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Style the "About Us" section */
+#about {
+  text-align: center;
+  position: relative;
+  height: 80vh;
+  background-image: url(twoo.jpg);
+  background-size: cover;
+  
+  padding: 50px 0;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(143, 135, 135, 0.1);
+  z-index: -1;
+}
+
+#about h4 {
+  position: relative;
+  z-index: 1;
+  font-size: 24px;
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 5px;
+  color:black;
+}
+
+#about .team {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+/* Style the "About Us" section heading */
+#about h1.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+
+/* Style the "About Us" section heading */
+#about h1.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Add space below the heading */
+  font-family: Arial, sans-serif; /* Use your preferred font */
+}
+
+/* Style the team members' names */
+
+
+#about .team h4 {
+  font-size: 24px;
+  margin: 5px 0; /* Add space between team members' names */
+  font-family: Arial, sans-serif; /* Use your preferred font */
+}
+
+/* Style the text container */
+#about .text-container {
+  max-width: 800px; /* Limit the width of the text container */
+  margin: 0 auto; /* Center the text container horizontally */
+}
+#one{
+  color: white;
+}
+.text-container
+{
+   background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 5px;
+  color:black;
+}
+/* Abstract SECTION */
+
+
+
+
+
+  .bordered-box {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .box {
+    flex-basis: 48%;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  .box1 {
+    flex-basis: 48%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+
+/*Technologiess*/
+
+  #technologies {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .section-heading {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .technology-category {
+    margin: 20px 0;
+  }
+
+  .category-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3498db;
+  }
+
+  .technology-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .technology-list li {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .icon {
+    margin-right: 8px;
+  }
+/*Vedio*/
+
+#video {
+  background-color: #000;
+  text-align: center;
+  padding: 20px;
+}
+
+.section-heading {
+  font-size: 24px;
+  color: #fff;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 aspect ratio for responsive sizing */
+}
+
+.fullscreen-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+
+  /* FOOTER SECTION */
+
+  footer {
+        background-color: #3498db;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer-container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .footer-text {
+        font-size: 16px;
+    }
