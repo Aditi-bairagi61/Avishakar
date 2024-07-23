@@ -5,4 +5,6 @@ Real-Time Updates: Monitor progress and activities instantly.<br>
 Resource Management: Track equipment, materials, and manpower.<br>
 Transparency: Enhance visibility for all stakeholders.<br>
 Reports and Analytics: Generate insights for decision-making.<br>
-User-Friendly Interface: Intuitive design for ease of use.
+User-Friendly Interface: Intuitive design for ease of use.<br><br><br>
+Note: This repository contains a demo website showcasing the functionality of the project.
+
